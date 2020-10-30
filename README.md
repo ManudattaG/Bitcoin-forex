@@ -8,11 +8,11 @@ To develop a service that constantly checks the currency exchange rate from Bitc
 Approach:
 ------------------------------------------------------------------------------------
 
-* Requirement Gathering
 * Research and Analysis of Bitcoin APIs and services
-* Creating 2 REST APIs for getLatestRate and getHistoricalRates using Flask app
+* Create a flask app service around the Bitcoin wrapper function
+* Create 2 REST API endpoints - getLatestRate and getHistoricalRates
 * Transformation of data and mapping the API response to corresponding endpoints
-* Return the JSON API results around the wrapper API
+* Return the JSON API results
 
 
 Architecture Diagram
@@ -40,12 +40,6 @@ Overview of "Bitcoin-forex" Workflow:
 	* Unit test cases written by using forex bitcoin service and pytest framework
 	* Covered all edge cases and failure cases for both get_latest_price() and get_previous_price_list() methods
 	
-	
-Library Installation:
-------------------------------------------------------------------------------------
-* Install using python package
-
-	```pip install forex-python```
 	
 	
 API usage:
@@ -101,6 +95,13 @@ Libraries Used:
 1. _flask_restful_ -- Extension for Flask that adds support for quickly building REST APIs.
 2. _forex-python_ -- Service that provides Foreign exchange rates and currency conversion.
 3. _pytest_ -- Testing framework based on Python
+
+
+Library Installation:
+------------------------------------------------------------------------------------
+* Install using python package
+
+	```pip install forex-python```
 
 
 Solution:
