@@ -15,6 +15,12 @@ Approach:
 * Return the JSON API results around the wrapper API
 
 
+Architecture Diagram
+--------------------------------------------------------------------------------------
+
+![Alt text](/architecture.png?raw=true "Architecture Diagram")
+
+
 Overview of "d2d-vehicle-simulator" Workflow:
 ------------------------------------------------------------------------------------
 
@@ -26,6 +32,7 @@ Overview of "d2d-vehicle-simulator" Workflow:
 2. Create Flask API (GET - /api/getHistoricalRates)
     * An API/wrapper around the Bitcoin service
 	* Converts startDate and endDate to corresponding datetime format to query Bitcoin service
+	* Check period is configurable
     * Gets Bitcoin's historical rates by calling "get_previous_price_list()" method between startDate and endDate
     * Returns the json data with the collection of historical rates
 	
@@ -34,7 +41,7 @@ Overview of "d2d-vehicle-simulator" Workflow:
 	* Covered all edge cases and failure cases for both get_latest_price() and get_previous_price_list() methods
 	
 	
-Installation:
+Library Installation:
 ------------------------------------------------------------------------------------
 * Install using python package
 
@@ -45,13 +52,16 @@ API usage:
 --------------------------------------------------------------------------------------
 1. Get Latest Rate -- /api/getLatestRate
 
+	```
 	response:
 		{
 			"latest_rate": 13195.06
 		}
+	```
 
-2. Get Historical Rates -- /api/getHistoricalRates?startDate=<startDate>&endDate=<endDate>
+2. Get Historical Rates -- /api/getHistoricalRates?startDate="2020-10-15"&endDate="2020-10-25"
 
+	```
 	response:
 		{
 			"historical_rates": {
@@ -68,6 +78,7 @@ API usage:
 				"2020-10-25": 13039.0133
 			}
 		}
+	```
 	
 Project Structure:
 --------------------------------------------------------------------------------------
@@ -92,4 +103,4 @@ Libraries Used:
 3. _pytest_ -- Testing framework based on Python
 
 
-PS: API screenshots available in /demo_screenshots/README.md
+PS: Bitcoin service demo screenshots available [here](/demo_screenshots/README.md)
