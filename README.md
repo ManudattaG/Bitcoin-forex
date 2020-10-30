@@ -21,7 +21,7 @@ Architecture Diagram
 ![Alt text](/architecture.png?raw=true "Architecture Diagram")
 
 
-Overview of "d2d-vehicle-simulator" Workflow:
+Overview of "Bitcoin-forex" Workflow:
 ------------------------------------------------------------------------------------
 
 1. Create Flask API (GET - /api/getLatestRate)
@@ -119,18 +119,18 @@ Hooray! Now our Bitcoin service is ready to use. To make this application produc
 	* Create a lambda function which corresponds to API gateway (trigger to lambda function)
 	* Create a CI/CD pipeline using code build, code deploy to automatically trigger the build and deploy the service
 	
-	```
-	AWS resources that can be used to deploy the service:
-	* API gateway -- To create REST APIs
-	* AWS Lambda function -- To write code without having to worry about infrastructure and scale automatically
-	* SSM parameter store -- To secretly store the credentials, URLs and API keys
-	* AWS Code Pipeline -- To automate release pipelines
-	* AWS CodeBuild -- To compile source code, runs tests, and produces software packages that are ready to deploy
-	* AWS CodeDeploy -- To deploy service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services.
-	* AWS KMS -- Optionally we can use AWS Key Management Service to encrypt data and to automatically rotate customer master keys(CMK) if any
-	* AWS S3 -- Optionally we can use Simple Storage Service to store metadata information and to host any static web pages, sites.
-	* AWS DynamoDB -- Optionally we can use NoSql DynamoDB database to store items which has high availability and durability and to offload the administrative burden
-	```
+```
+AWS resources that can be used to deploy the service:
+* API gateway -- To create REST APIs
+* AWS Lambda function -- To write code without having to worry about infrastructure and scale automatically
+* SSM parameter store -- To secretly store the credentials, URLs and API keys
+* AWS Code Pipeline -- To automate release pipelines
+* AWS CodeBuild -- To compile source code, runs tests, and produces software packages that are ready to deploy
+* AWS CodeDeploy -- To deploy service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services.
+* AWS KMS -- Optionally we can use AWS Key Management Service to encrypt data and to automatically rotate customer master keys(CMK) if any
+* AWS S3 -- Optionally we can use Simple Storage Service to store metadata information and to host any static web pages, sites.
+* AWS DynamoDB -- Optionally we can use NoSql DynamoDB database to store items which has high availability and durability and to offload the administrative burden
+```
 
 
 PS: Bitcoin service demo screenshots available [here](/demo_screenshots/README.md)
