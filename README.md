@@ -94,7 +94,8 @@ Libraries Used:
 
 1. _flask_restful_ -- Extension for Flask that adds support for quickly building REST APIs.
 2. _forex-python_ -- Service that provides Foreign exchange rates and currency conversion.
-3. _pytest_ -- Testing framework based on Python
+3. _pytest_ -- Testing framework based on Python.
+4. _flask_ -- Web application framework written in Python which is based on Werkzeug WSGI toolkit and Jinja2 template engine.
 
 
 Library Installation:
