@@ -101,7 +101,12 @@ Library Installation:
 ------------------------------------------------------------------------------------
 * Install using python package
 
-	```pip install forex-python```
+	```
+	pip install forex-python
+	pip install flask_restful
+	pip install flask
+	pip install pytest
+	```
 
 
 Solution:
