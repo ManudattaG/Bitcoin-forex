@@ -50,7 +50,7 @@ API usage:
 	```
 	response:
 		{
-			"latest_rate": 14460.51
+		    "latest_rate": 14460.51
 		}
 	```
 
