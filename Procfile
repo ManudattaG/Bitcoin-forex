@@ -1,1 +1,1 @@
-web: gunicorn app:src/bitcoin
+web: gunicorn app:bitcoin
