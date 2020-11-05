@@ -1,1 +1,1 @@
-web: gunicorn app:bitcoin
+web: gunicorn bitcoin:app
