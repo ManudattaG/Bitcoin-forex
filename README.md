@@ -104,14 +104,10 @@ Libraries Used:
 
 Library Installation:
 ------------------------------------------------------------------------------------
-* Install virtualenv package to create a virtual env for the project to install dependency libraries
-	_pip3 install virtualenv_
-* Create virtual env to install all packages (Provided in requirements.txt file)
-	_virtualenv .env_
-* Activate the virtual env
-	_source .env/Scripts/activate_
-* Install the dependency libraries
-	_pip3 install -r requirements.txt_
+* Install virtualenv package to create a virtual env for the project to install dependency libraries --> _pip3 install virtualenv_
+* Create virtual env to install all packages --> _virtualenv .env_
+* Activate the virtual env --> _source .env/Scripts/activate_
+* Install the dependency libraries (Provided in requirements.txt file) --> _pip3 install -r requirements.txt_
 
 
 Deployment options:
@@ -136,10 +132,10 @@ _AWS resources that can be used to deploy the service:_
 * SSM parameter store -- To secretly store the credentials, URLs and API keys
 * AWS Code Pipeline -- To automate release pipelines
 * AWS CodeBuild -- To compile source code, runs tests, and produces software packages that are ready to deploy
-* AWS CodeDeploy -- To deploy service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services.
-* AWS KMS -- Optionally we can use AWS Key Management Service to encrypt data and to automatically rotate customer master keys(CMK) if any
+* AWS CodeDeploy -- To deploy service that automates application deployments to Amazon EC2 instances, serverless Lambda functions, or Amazon ECS services.
+* AWS KMS -- Optionally we can use AWS Key Management Service to encrypt data and to automatically rotate customer master keys(CMK)
 * AWS S3 -- Optionally we can use Simple Storage Service to store metadata information and to host any static web pages, sites.
-* AWS DynamoDB -- Optionally we can use NoSql DynamoDB database to store items which has high availability and durability and to offload the administrative burden
+* AWS DynamoDB -- Optionally we can use DynamoDB database to store items for high availability and durability and to offload the administrative burden
 
 
 
