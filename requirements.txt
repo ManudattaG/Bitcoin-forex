@@ -2,3 +2,4 @@ forex-python
 flask_restful
 flask
 pytest
+gunicorn
