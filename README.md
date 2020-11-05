@@ -104,8 +104,8 @@ Libraries Used:
 
 Library Installation:
 ------------------------------------------------------------------------------------
-* Install virtualenv package to create a virtual env for the project to install dependency libraries --> _pip3 install virtualenv_
-* Create virtual env to install all packages --> _virtualenv .env_
+* Install virtualenv package to create a virtual env --> _pip3 install virtualenv_
+* Create virtual env to install the dependencies --> _virtualenv .env_
 * Activate the virtual env --> _source .env/Scripts/activate_
 * Install the dependency libraries (Provided in requirements.txt file) --> _pip3 install -r requirements.txt_
 
