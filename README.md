@@ -27,14 +27,14 @@ Overview of "Bitcoin-forex" Workflow:
 
 1. Create Flask API (GET - /api/getLatestRate)
     * An API/wrapper around the Bitcoin service
-    * Gets Bitcoin's latest conversion rate of USD by calling "get_latest_price()" method
+    * Gets Bitcoin's latest conversion rate(USD) by calling "get_latest_price()" method
     * Returns the json data with the latest USD price
     
 2. Create Flask API (GET - /api/getHistoricalRates)
     * An API/wrapper around the Bitcoin service
 	* Converts startDate and endDate to corresponding datetime format to query Bitcoin service
 	* Check period is configurable
-    * Gets Bitcoin's historical rates by calling "get_previous_price_list()" method between startDate and endDate
+    * Gets Bitcoin's historical rates(USD) by calling "get_previous_price_list()" method between startDate and endDate
     * Returns the json data with the collection of historical rates
 	
 3. Create tests for Bitcoin service
@@ -142,11 +142,11 @@ _AWS resources that can be used to deploy the service:_
 Solution:
 ---------------------------------------------------------------------------------------
 
-This service is deployed on Heroku and always gets the latest Bitcoin conversion rates based on the date the API is triggered. Find the below API endpoints of the service.
+This service is deployed on Heroku and always gets the latest Bitcoin conversion rates (USD) on the date the API is triggered. Find the below API endpoints of the service.
 
-To get latest rate --> https://bitcoin-forex.herokuapp.com/api/getLatestRate
+* To get latest rate --> https://bitcoin-forex.herokuapp.com/api/getLatestRate
 
-To get historical rates --> https://bitcoin-forex.herokuapp.com/api/getHistoricalRates?startDate=2020-10-15&endDate=2020-10-25
+* To get historical rates --> https://bitcoin-forex.herokuapp.com/api/getHistoricalRates?startDate=2020-10-15&endDate=2020-10-25
 
 
 PS: Bitcoin service demo screenshots available [here](/demo_screenshots/README.md)
